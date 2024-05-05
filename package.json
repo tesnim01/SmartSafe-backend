@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "data:import1": "node seeder",
+    "data:import2": "node seeder2",
+    "data:destroy1": "node seeder -d",
+    "data:destroy2": "node seeder2 -d",
+    "data:import": "npm run data:import1 && npm run data:import2",
+    "data:destroy": "npm run data:destroy1 && npm run data:destroy2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
